@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="core.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>#Beweegt</title>
+  </head>
+  <body>
+  
+    <div id="navBar">
+      <h1>#Beweegt</h1>
+      <div id="navItemsContainer">
+        <h3>Menu item</h3>
+        <h3>Menu item</h3>
+        <h3>Menu item</h3>
+      </div>
+    </div>
+
+    <div class="sideBar" id="sideBar1">
+      <h2>Filters</h2>
+    </div>
+
+    <div class="sideBar" id="sideBar2">
+      <div class="card">
+        <div class="cardImg"> </div>
+        <div class="cardText">
+          <h3>Naam van de sport</h3>
+          <b>Naam van de vereniging</b>
+          <p>Lorem Ipsum is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer 
+            took a galley of type and scrambled it to make a type specimen 
+            book. It has survived not only five centuries</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardImg"> </div>
+        <div class="cardText">
+          <h3>Naam van de sport</h3>
+          <b>Naam van de vereniging</b>
+          <p>Lorem Ipsum is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer 
+            took a galley of type and scrambled it to make a type specimen 
+            book. It has survived not only five centuries</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="cardImg"> </div>
+        <div class="cardText">
+          <h3>Naam van de sport</h3>
+          <b>Naam van de vereniging</b>
+          <p>Lorem Ipsum is simply dummy text of the printing and 
+            typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer 
+            took a galley of type and scrambled it to make a type specimen 
+            book. It has survived not only five centuries</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <script async defer src="core.js"></script>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

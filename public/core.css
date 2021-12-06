@@ -1,0 +1,100 @@
+/* general */
+
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+
+h1, h2, h3, p{
+    margin: 0;
+    user-select: none;
+}
+
+/* home page */
+
+#homeContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Map page */ 
+
+#navBar {
+    position: absolute;
+    bottom: 90%;
+    width: calc(100% - 48px);
+    height: 10%;
+    padding: 0 24px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+#navItemsContainer{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#map {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    z-index: 1;
+    height: 90%;
+    width: 100%;
+}
+
+.sideBar{
+    position: absolute;
+    top: 10%;
+    height: 90%;
+    padding: 0 24px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;  
+}
+#sideBar1{
+    width: calc(15vw - 48px);
+    height: calc(90% - 48px);
+    padding: 24px;
+    right: 85vw;
+    z-index: 3;
+    background-color: lightgrey;
+}
+#sideBar2{
+    width: calc(25vw - 48px);
+    right: 60vw;
+    z-index: 2;
+    background-color: white;
+}
+
+.card{
+    margin-top: 24px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+}
+.cardImg{
+    width: 120px;
+    height: auto;
+    background-color: darkgrey;
+}
+.cardText{
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+.cardText p{
+    margin-top: 6px;
+}
