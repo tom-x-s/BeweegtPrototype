@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
     <link rel="stylesheet" href="core.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -10,12 +10,12 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -28,22 +28,137 @@
     <title>#Beweegt</title>
   </head>
   <body>
-  
+
     <div id="navBar">
-      <h1>#Beweegt</h1>
+      <div id="navLogoContainer"><a href="/index.html" id="logoLink"><img src="/imgs/BeweegEindhoven1.png" alt="navLogo" id="navLogo"></a></div>
       <div id="navItemsContainer">
-        <h3>Menu item</h3>
-        <h3>Menu item</h3>
-        <h3>Menu item</h3>
+        <a href="/map.html"><h3>Kaart</h3></a>
+        <p>|</p>
+        <a href=""><h3>Spot melden</h3></a>
+        <p>|</p>
+        <a href=""><h3>Over #Beweegt</h3></a>
+        <p>|</p>
+        <a href=""><h3>Voor beheerders</h3></a>
       </div>
     </div>
 
     <div class="sideBar" id="sideBar1">
       <h2>Filters</h2>
+      <div id=filterContainer>
+        <div class="filter">
+          <h4>Soort sport</h4>
+          <select id="soortSport" name="soortSport" class="dropdownFilter">
+            <option value="alle">Alle sporten</option>
+            <option value="Voetbal">Voetbal</option>
+            <option value="Yoga">Yoga</option>
+            <option value="Tennis">Tennis</option>
+            <option value="Fitness">Fitness</option>
+            <option value="etc.">etc.</option>
+          </select>
+        </div>
+
+        <div class="filter">
+          <h4>Sport niveau</h4>
+          <div id="niveau">
+            <div>
+              <input type="checkbox" id="Beginner" name="Beginner">
+              <label for="Beginner">Beginner</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Amateur" name="Amateur">
+              <label for="Amateur">Amateur</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Gevorderd" name="Gevorderd">
+              <label for="Gevorderd">Gevorderd</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Professioneel" name="Professioneel">
+              <label for="Professioneel">Professioneel</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter">
+          <h4>Leeftijden</h4>
+          <select id="leetfijd" name="leetfijd" class="dropdownFilter">
+            <option value="alle">Alle leetfijden</option>
+            <option value="0-3">0-3</option>
+            <option value="4-5">4-5</option>
+            <option value="6-12">6-12</option>
+            <option value="12-20">12-20</option>
+            <option value="20-35">20-35</option>
+            <option value="35-50">35-50</option>
+            <option value="50+">50+</option>
+          </select>
+        </div>
+
+        <div class="filter">
+          <h4>Dagen</h4>
+          <div id="dagen">
+            <div>
+              <input type="checkbox" id="Maandag" name="Maandag">
+              <label for="Maandag">Maandag</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Dinsdag" name="Dinsdag">
+              <label for="Dinsdag">Dinsdag</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Woensdag" name="Woensdag">
+              <label for="Woensdag">Woensdag</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Donderdag" name="Donderdag">
+              <label for="Donderdag">Donderdag</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Vrijdag" name="Vrijdag">
+              <label for="Vrijdag">Vrijdag</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Zaterdag" name="Zaterdag">
+              <label for="Zaterdag">Zaterdag</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Zondag" name="Zondag">
+              <label for="Zondag">Zondag</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter">
+          <h4>Tijden</h4>
+          <div id="tijden">
+            <div>
+              <input type="checkbox" id="Ochtend" name="Ochtend">
+              <label for="Ochtend">Ochtend</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Middag" name="Middag">
+              <label for="Middag">Middag</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Avond" name="Avond">
+              <label for="Avond">Avond</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter">
+          <h4>Afstand</h4>
+        </div>
+
+        <div class="filter">
+          <h4>Overige opties</h4>
+        </div>
+
+      </div>
     </div>
 
     <div class="sideBar" id="sideBar2">
-      <div class="card">
+      
+      <a class="card" href="testInfoPage.html">
         <div class="cardImg"> </div>
         <div class="cardText">
           <h3>Naam van de sport</h3>
@@ -54,8 +169,9 @@
             took a galley of type and scrambled it to make a type specimen 
             book. It has survived not only five centuries</p>
         </div>
-      </div>
-      <div class="card">
+      </a>
+
+      <a class="card" href="testInfoPage.html">
         <div class="cardImg"> </div>
         <div class="cardText">
           <h3>Naam van de sport</h3>
@@ -66,8 +182,9 @@
             took a galley of type and scrambled it to make a type specimen 
             book. It has survived not only five centuries</p>
         </div>
-      </div>
-      <div class="card">
+      </a>
+
+      <a class="card" href="testInfoPage.html">
         <div class="cardImg"> </div>
         <div class="cardText">
           <h3>Naam van de sport</h3>
@@ -78,11 +195,12 @@
             took a galley of type and scrambled it to make a type specimen 
             book. It has survived not only five centuries</p>
         </div>
-      </div>
-    </div>
+      </a>
+      
+    </div>     
 
     <div id="map"></div>
-
+    
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>
     <script async defer src="core.js"></script>
     <!--
