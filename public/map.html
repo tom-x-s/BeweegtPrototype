@@ -43,17 +43,17 @@
     </div>
 
     <div class="sideBar" id="sideBar1">
-      <h2>Filters</h2>
+      <h2>Filteren op:</h2>
       <div id=filterContainer>
+
         <div class="filter">
           <h4>Soort sport</h4>
           <select id="soortSport" name="soortSport" class="dropdownFilter">
-            <option value="alle">Alle sporten</option>
+            <option value="AlleSporten">Alle sporten</option>
             <option value="Voetbal">Voetbal</option>
-            <option value="Yoga">Yoga</option>
             <option value="Tennis">Tennis</option>
             <option value="Fitness">Fitness</option>
-            <option value="etc.">etc.</option>
+            <option value="Fitness">Cardio</option>
           </select>
         </div>
 
@@ -61,19 +61,19 @@
           <h4>Sport niveau</h4>
           <div id="niveau">
             <div>
-              <input type="checkbox" id="Beginner" name="Beginner">
+              <input type="checkbox" id="Beginner" class="niveauFilter" name="Beginner">
               <label for="Beginner">Beginner</label>
             </div>
             <div>
-              <input type="checkbox" id="Amateur" name="Amateur">
+              <input type="checkbox" id="Amateur" class="niveauFilter" name="Amateur">
               <label for="Amateur">Amateur</label>
             </div>
             <div>
-              <input type="checkbox" id="Gevorderd" name="Gevorderd">
+              <input type="checkbox" id="Gevorderd" class="niveauFilter" name="Gevorderd">
               <label for="Gevorderd">Gevorderd</label>
             </div>
             <div>
-              <input type="checkbox" id="Professioneel" name="Professioneel">
+              <input type="checkbox" id="Professioneel" class="niveauFilter" name="Professioneel">
               <label for="Professioneel">Professioneel</label>
             </div>
           </div>
@@ -81,13 +81,13 @@
 
         <div class="filter">
           <h4>Leeftijden</h4>
-          <select id="leetfijd" name="leetfijd" class="dropdownFilter">
-            <option value="alle">Alle leetfijden</option>
+          <select id="leetfijd" name="leeftijd" class="dropdownFilter">
+            <option value="AlleLeeftijden">Alle leetfijden</option>
             <option value="0-3">0-3</option>
             <option value="4-5">4-5</option>
             <option value="6-12">6-12</option>
-            <option value="12-20">12-20</option>
-            <option value="20-35">20-35</option>
+            <option value="12-18">12-18</option>
+            <option value="18-35">18-35</option>
             <option value="35-50">35-50</option>
             <option value="50+">50+</option>
           </select>
@@ -97,31 +97,31 @@
           <h4>Dagen</h4>
           <div id="dagen">
             <div>
-              <input type="checkbox" id="Maandag" name="Maandag">
+              <input type="checkbox" id="Maandag" class="dagenFilter" name="Maandag">
               <label for="Maandag">Maandag</label>
             </div>
             <div>
-              <input type="checkbox" id="Dinsdag" name="Dinsdag">
+              <input type="checkbox" id="Dinsdag" class="dagenFilter" name="Dinsdag">
               <label for="Dinsdag">Dinsdag</label>
             </div>
             <div>
-              <input type="checkbox" id="Woensdag" name="Woensdag">
+              <input type="checkbox" id="Woensdag" class="dagenFilter" name="Woensdag">
               <label for="Woensdag">Woensdag</label>
             </div>
             <div>
-              <input type="checkbox" id="Donderdag" name="Donderdag">
+              <input type="checkbox" id="Donderdag" class="dagenFilter" name="Donderdag">
               <label for="Donderdag">Donderdag</label>
             </div>
             <div>
-              <input type="checkbox" id="Vrijdag" name="Vrijdag">
+              <input type="checkbox" id="Vrijdag" class="dagenFilter" name="Vrijdag">
               <label for="Vrijdag">Vrijdag</label>
             </div>
             <div>
-              <input type="checkbox" id="Zaterdag" name="Zaterdag">
+              <input type="checkbox" id="Zaterdag" class="dagenFilter" name="Zaterdag">
               <label for="Zaterdag">Zaterdag</label>
             </div>
             <div>
-              <input type="checkbox" id="Zondag" name="Zondag">
+              <input type="checkbox" id="Zondag" class="dagenFilter" name="Zondag">
               <label for="Zondag">Zondag</label>
             </div>
           </div>
@@ -131,15 +131,15 @@
           <h4>Tijden</h4>
           <div id="tijden">
             <div>
-              <input type="checkbox" id="Ochtend" name="Ochtend">
+              <input type="checkbox" id="Ochtend" class="tijdenFilter" name="Ochtend">
               <label for="Ochtend">Ochtend</label>
             </div>
             <div>
-              <input type="checkbox" id="Middag" name="Middag">
+              <input type="checkbox" id="Middag" class="tijdenFilter" name="Middag">
               <label for="Middag">Middag</label>
             </div>
             <div>
-              <input type="checkbox" id="Avond" name="Avond">
+              <input type="checkbox" id="Avond" class="tijdenFilter" name="Avond">
               <label for="Avond">Avond</label>
             </div>
           </div>
@@ -151,6 +151,12 @@
 
         <div class="filter">
           <h4>Overige opties</h4>
+          <div id="overig">
+            <div>
+              <input type="checkbox" id="Rolstoel" name="Rolstoel">
+              <label for="Rolstoel">Rolstoel toegankelijk</label>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -158,42 +164,45 @@
 
     <div class="sideBar" id="sideBar2">
       
-      <a class="card" href="testInfoPage.html">
+      <a class="card Voetbal Woensdag Zaterdag Zondag Ochtend Middag Beginner Amateur Gevorderd 6-12 12-18" href="testInfoPage.html">
         <div class="cardImg"> </div>
         <div class="cardText">
-          <h3>Naam van de sport</h3>
-          <b>Naam van de vereniging</b>
-          <p>Lorem Ipsum is simply dummy text of the printing and 
-            typesetting industry. Lorem Ipsum has been the industry's 
-            standard dummy text ever since the 1500s, when an unknown printer 
-            took a galley of type and scrambled it to make a type specimen 
-            book. It has survived not only five centuries</p>
+          <h3>Voetbal</h3>
+          <b><i class="tag georganiseerdTag">Vereniging</i></b>
+          <b>VV Jong Eindhoven</b>
+          <p>Dagen: Woensdag, zaterdag & zondag</p>
+          <p>Tijden: Ochtend & middag</p>
+          <p>Leeftijd: 6-18 </p>
+          <p>Niveau: Beginner, amateur, gevorderd </p>
+          <p>Prijs: Maandelijks lidmaatschap </p>
+          <p>Afstand: 2,3km </p>
         </div>
       </a>
 
-      <a class="card" href="testInfoPage.html">
+      <a class="card Fitness Cardio Maandag Dinsdag Woensdag Donderdag Vrijdag Zaterdag AlleTijden Beginner Amateur 12-18 18-35 35-50" href="testInfoPage.html">
         <div class="cardImg"> </div>
         <div class="cardText">
-          <h3>Naam van de sport</h3>
-          <b>Naam van de vereniging</b>
-          <p>Lorem Ipsum is simply dummy text of the printing and 
-            typesetting industry. Lorem Ipsum has been the industry's 
-            standard dummy text ever since the 1500s, when an unknown printer 
-            took a galley of type and scrambled it to make a type specimen 
-            book. It has survived not only five centuries</p>
+          <h3>Fitness & Cardio</h3>
+          <b><i class="tag ongeorganiseerdTag">Sportschool</i></b>
+          <b>Fit for Free Eindhoven</b>
+          <p>Dagen: Maandag, dinsdag, woensdag, donderdag, vrijdag & zaterdag</p>
+          <p>Tijden: Ochtend, middag & avond</p>
+          <p>Leeftijd: 12-50 </p>
+          <p>Niveau: Beginner, amateur </p>
+          <p>Prijs: Maandelijks lidmaatschap </p>
+          <p>Afstand: 6,1km </p>
         </div>
       </a>
 
-      <a class="card" href="testInfoPage.html">
+      <a class="card Voetbal Tennis Hockey BeachVolleybal Korfbal Handbal AlleDagen AlleTijden AlleNiveaus AlleLeeftijden" href="testInfoPage.html">
         <div class="cardImg"> </div>
         <div class="cardText">
-          <h3>Naam van de sport</h3>
-          <b>Naam van de vereniging</b>
-          <p>Lorem Ipsum is simply dummy text of the printing and 
-            typesetting industry. Lorem Ipsum has been the industry's 
-            standard dummy text ever since the 1500s, when an unknown printer 
-            took a galley of type and scrambled it to make a type specimen 
-            book. It has survived not only five centuries</p>
+          <h3>Sportpark Eindhoven Noord</h3>
+          <b><i class="tag locatieTag">Openbare locatie</i></b>
+          <p>Dagen: Alle dagen</p>
+          <p>Tijden: Ochtend, middag & avond</p>
+          <p>Prijs: gratis </p>
+          <p>Afstand: 5,3km </p>
         </div>
       </a>
       
